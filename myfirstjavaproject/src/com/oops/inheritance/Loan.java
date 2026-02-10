@@ -2,6 +2,7 @@ package com.oops.inheritance;
 
 import java.util.Scanner;
 
+//Super class or Base class or Parent 
 public class Loan {
 	static Scanner sc = new Scanner(System.in);
 

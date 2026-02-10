@@ -2,6 +2,8 @@ package com.oops.inheritance;
 
 import java.util.Scanner;
 
+
+//Sub class or Derived class or child class 
 public class PersonalLoan extends Loan {
 	static Scanner sc = new Scanner(System.in);
 
