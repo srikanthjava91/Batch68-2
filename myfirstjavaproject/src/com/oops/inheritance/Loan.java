@@ -61,7 +61,7 @@ public class Loan {
 		return cibil;
 	}
 
-	int getUserAge() {
+	Number getUserAge() {
 		System.out.println("Enter your age : ");
 		int age = sc.nextInt();
 		return age;
@@ -70,6 +70,10 @@ public class Loan {
 	double getROI() {
 		double roi = 9.5;
 		return roi;
+	}
+
+	String hello(String s) {
+		return "Hello ";
 	}
 
 	String getAddressDetails() {

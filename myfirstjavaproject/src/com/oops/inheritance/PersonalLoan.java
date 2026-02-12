@@ -21,7 +21,7 @@ public class PersonalLoan extends Loan {
 
 		double salary = pl.getUserSalaryInfo();
 		int cibil = pl.getUserCibilScore();
-		int age = pl.getUserAge();
+		int age = (int) pl.getUserAge();
 
 		if (salary >= 800000.00 && cibil >= 750 && age >= 26 && pl.validateAadher() && pl.ValidatePan()
 				&& pl.validatePhone()) {
