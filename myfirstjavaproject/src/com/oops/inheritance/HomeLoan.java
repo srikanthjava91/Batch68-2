@@ -2,7 +2,7 @@ package com.oops.inheritance;
 
 import java.io.IOException;
 
-public class HomeLoan extends Loan {
+public class HomeLoan extends LoanImpl {
 
 //	Whenever we are not happy with the Parent class functionalities, 
 //	then go and create same method with same signature in child class with different behavior 
@@ -58,24 +58,22 @@ public class HomeLoan extends Loan {
 //	8) 
 //	a) If the Parent class is abstract and method is also abstract, 
 //	the child class must override that method with implementation.
-	
+
 //	b) If the Parent class is normal class and we have normal method. 
 //	the child class is abstract, So can we override normal method as abstract ..? Yes 
-	
-	
 
 	@Override
-	double getROI() {
+	public double getROI() {
 		return 8.0;
 	}
 
 	@Override
-	String hello(String str) {
+	public String hello(String str) {
 		return str;
 	}
 
 	@Override
-	Integer getUserAge() {
+	public Integer getUserAge() {
 		return 20;
 	}
 
@@ -105,7 +103,7 @@ public class HomeLoan extends Loan {
 
 		// By using Parent Object, Parent reference we can call only Parent class
 		// functionalities.
-		Loan l = new Loan();
+		Loan l = new LoanImpl();
 
 		// By using Child Object, Child reference we can access both Parent and child
 		// class methods directly

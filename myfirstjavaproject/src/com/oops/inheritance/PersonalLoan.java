@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 
 //Sub class or Derived class or child class 
-public class PersonalLoan extends Loan {
+public class PersonalLoan extends LoanImpl {
 	static Scanner sc = new Scanner(System.in);
 
 	void getPersonalLoanDocInfo() {
