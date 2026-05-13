@@ -18,8 +18,15 @@ public class TestStreamDemo1 {
 		List<String> names = Arrays.asList("Tilak", "Rohit", "Dhoni", "Virat", "Sky", "Pandya", "Abishek", "Vaibhav");
 		List<String> names1 = names.stream()
 								   .filter(s-> s.contains("i"))
+								   .sorted()
 								   .collect(Collectors.toList());
 		System.out.println(names1);
+		
+		List<Double> salries = Arrays.asList(500000.00, 340000.00,600000.00,800000.00,700000.00);
+		List<Double> salries1 = salries.stream().filter(i-> i>=600000.00).collect(Collectors.toList());
+			
+//		salries1.forEach(s-> System.out.println(s));
+		salries1.forEach(System.out::println);
 		
 		
 
